@@ -6,7 +6,7 @@ body{
 }
 .listBox{
     width: 75%;
-    background: -webkit-linear-gradient(top, rgb(65, 64, 64), rgb(126, 125, 125));
+    background: -webkit-linear-gradient(top, rgb(65, 64, 64), rgb(126, 125, 125) 100%);
     height: 40px;
     margin: 0px auto;
     border-radius: 7px;
@@ -17,47 +17,81 @@ body{
     padding: 0px;
 }
 .listItem li{
-    width: 14%;
+    width: 10.5%;
     float: left;
     list-style-type: none;
     color: #fff;
     padding: 10px;
     box-sizing: border-box;
+    text-align: center;
 }
 .listItem li:hover{
     background: -webkit-linear-gradient(top, rgb(151, 151, 151), rgb(99, 99, 99));
     cursor: pointer;
 }
+.logo{
+    width: 5%;
+}
+.SerchIcone{
+    position: relative;
+    display: flex;
+}
+.SerchIcone i{
+    position: relative;
+    top: 12px;
+    left: 21px;
+    color: #fff;
+    font-size: 13px;
+}
 .serchInput{
     padding: 5px;
     box-sizing: border-box;
-    margin: 6px 6px;
+    margin: 6px 0px;
     border-radius: 20px;
     border: 0px;
+    background: -webkit-linear-gradient(top, rgb(87, 86, 86), rgb(167, 164, 164));
+    box-shadow: 1px 1px 2px #252525 inset;
+    color: #fff;
+}
+.textImg{
+    width: 100%;
+    height: 800px;
+    background-image: url(./Images//imgbig.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px auto 0px;
+    text-align: center;  
+}
+.img2{
+    width: 65%;
+    margin: 30px auto -30px;
+    background: -webkit-linear-gradient( bottom, rgb(255, 255, 255), rgb(255, 255, 255) 130%); 
 }
 #imgBoby{
-    width: 70%;
+    width: 65%;
     margin: 10px auto;
     border: 1px solid rgb(184, 183, 183);
 }
+/*
 .img {
     width: 100%;
     height: 800px;
-}
+    margin: -20px auto 0px
+}*/
 #services{
-    width: 70%;
-    margin: 20px auto;
+    width: 65%;
+    margin: 20px auto 0px;
 }
 .servBox{
-    width: 32.60%;
+    width: 24.5%;
     float: left;
-    margin: 2.5px;
+    margin-left: 2.5px;
     border: 1px solid rgb(189, 188, 188);
     text-align: center;
-    margin-bottom: 5%;
     border-radius: 5px;
     box-shadow: 1px 1px 4px .5px #b3b2b2;
-
+    padding: 3px;
+    box-sizing: border-box;
 }
 .servBox h3{
     color: #313030;
@@ -66,31 +100,58 @@ body{
 }
 .imgBoxServ{
     width: 100%;
-    height: 300px;
+    height: 180px;
 }
 .boxAntherServ{
-    width: 70%;
+    width: 65%;
     height: 40px;
     background: rgb(245, 243, 243);
-    margin: 420px auto 5px;
+    margin: 300px auto 5px;
     border-top: #bdbdbd 1px solid;
     border-bottom: #bdbdbd 1px solid;
 }
-.boxAntherServ p{
-    font-size: 14px;
+.textLeft{
+    float: left;
+    font-size: 10px;
     text-align: center;
+    margin-top: 15px;
+    margin-left: 10px;
 }
 .boxAntherServ p a{
     text-decoration: none;
-    color: #386fe7;
+    color: #5080e6;
 }
-footer{
-    width: 70%;
-    height: 20px;
-    margin: 10px auto;
+.listFooter{
+    width: 50%;
+    height: 30px;
+    float: right;
     display: flex;
-    padding: 10px;
-    margin-bottom: 30px;
+    font-size: 11px
+}
+.a{
+    list-style-type: none;
+    margin-top: 3px;
+}
+.a a{
+    text-decoration: none;
+    color: #2c4fc4;
+    margin-left: 4px;
+    border-right: 1px solid #b8b8b8;
+    padding-right: 3px; 
+
+}
+.a.b a {
+    border-right: 0px;
+}
+
+footer{
+    width: 64%;
+    height: 20px;
+    margin: 10px auto 0px;
+    display: flex;
+    margin-bottom: 60px;
+    font-size: 12px;
+    padding-bottom: 10px;
 }
 footer a{
     text-decoration: none;
@@ -100,9 +161,27 @@ footer a{
 }
 footer p{
     color: #313030;
-    margin-left: 23%;
+    float: left;
 }
 #linkFirst{
     border-right: 1px solid #888686;
-
+}
+.chooseCountry{
+    width: 220px;
+    height: 38px;
+    margin: auto;
+    float: right;
+    border-radius: 3px;
+    border: 1px solid #bbbaba;
+}
+.chooseCountry img{
+    float: left;
+    border-right: 1px solid #bbbbbb;
+    padding: 8px
+}
+.chooseCountry p{
+    font-size: 13px;
+    text-align: end;
+    margin-left: 5px;
+    color: #2c69db
 }
